@@ -1,7 +1,7 @@
 # define methods
 _methods = {}
-_methods.getName = -> this._name
-_methods.getAge = -> this._age
+_methods.getName = -> @_name
+_methods.getAge = -> @_age
 
 # factory method to create new instance
 create = (name, age)->

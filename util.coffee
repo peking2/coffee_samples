@@ -7,4 +7,4 @@ module.exports = {p}
 
 # define constants
 # PI is read only
-Object.defineProperty module.exports, 'PI', {value: 3.1415926}
+Object.defineProperty module.exports, 'PI', {value: 3.141593}
