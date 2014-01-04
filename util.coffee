@@ -1,3 +1,5 @@
+# this is to demo singleton pattern
+
 # global functions can be defined in a module
 # It's like static class or singleton class
 

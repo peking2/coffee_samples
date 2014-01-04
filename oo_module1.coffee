@@ -1,3 +1,5 @@
+# this is to demo prototype pattern
+
 # define methods
 _methods = {}
 _methods.getName = -> @_name

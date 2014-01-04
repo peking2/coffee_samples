@@ -1,4 +1,5 @@
-OOModule = require './oo_module'
+OOModule1 = require './oo_module1'
+OOModule2 = require './oo_module2'
 FuncModule = require './func_module'
 Util = require './util'
 p = Util.p
@@ -17,9 +18,9 @@ demo_func = ->
   p FuncModule.getAge a
 
 # Looks like OO style is more convenient for callers
-demo_oo = ->
-  p "\ndemo_oo"
-  a = OOModule.create 'Tom', 21
+demo_oo1 = ->
+  p "\ndemo_oo1"
+  a = OOModule1.create 'Tom', 21
   p a.getName()
   p a.getAge()
 
@@ -31,7 +32,22 @@ demo_oo = ->
   p a.getName()
   p a.__proto__.getName.call a
 
+demo_oo2 = ->
+  p "\ndemo_oo2"
+  a = OOModule2.create 'Tom', 21
+
+  p a.getName()
+  p a.getAge()
+
+  p "\nset properties"
+  a.setName 'Mike'
+  a.setAge '31'
+  p a.getName()
+  p a.getAge()
+
+
 do demo_constants
 do demo_func
-do demo_oo
+do demo_oo1
+do demo_oo2
 

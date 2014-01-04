@@ -1,3 +1,5 @@
+# this is to demo functional pattern
+
 # factory method to create new object
 create = (name, age)->
   name: name
