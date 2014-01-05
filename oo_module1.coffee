@@ -1,9 +1,9 @@
 # this is to demo prototype pattern
 
 # define methods
-_methods = {}
-_methods.getName = -> @_name
-_methods.getAge = -> @_age
+_methods =
+  getName: -> @_name
+  getAge: -> @_age
 
 # factory method to create new instance
 create = (name, age)->
