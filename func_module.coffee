@@ -2,11 +2,11 @@
 
 # factory method to create new object
 create = (name, age)->
-  name: name
-  age: age
+  _name: name
+  _age: age
 
-getName = (obj) -> obj.name
-getAge = (obj) -> obj.age
+getName = (obj) -> obj._name
+getAge = (obj) -> obj._age
 
 # export public interface
 module.exports = {create, getName, getAge}
