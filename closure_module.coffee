@@ -14,10 +14,10 @@ create = (name, age)->
     age: age
 
   # compsition over inheritance
-  getName: -> _getName.call self
-  getAge: -> _getAge.call self
-  setName: (name) -> _setName.call self, name
-  setAge: (age) -> _setAge.call self, age
+  getName: _getName.bind self
+  getAge: _getAge.bind self
+  setName: _setName.bind self
+  setAge: _setAge.bind self
 
 # export public interface
 module.exports = {create}
