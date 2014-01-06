@@ -3,11 +3,11 @@
 {p} = require './util'
 
 asyncFunc = (input, callback) ->
-  return callback new Error('invalid input') unless input?
+  return callback Error('invalid input') unless input?
   callback null, input
 
 syncFunc = (input) ->
-  input or new Error 'invalid input'
+  input or Error 'invalid input'
 
 
 p "\ndemo_async_errors"
